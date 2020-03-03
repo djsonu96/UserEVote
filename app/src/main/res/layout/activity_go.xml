@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_go"
+    tools:context=".GoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_CheckDet"
+        android:background="@drawable/gradient_go"
+        app:title=" Welcome "/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="Now It's Time"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
+                app:fontFamily="@font/almendra_sc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
+                app:fontFamily="@font/almendra_sc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote"
+                android:textColor="#ffffff"
+                android:textSize="70sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/almendra_sc" />
+
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="300dp"
+                android:layout_height="70sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/button_go"
+                android:fontFamily="@font/cutive_mono"
+                android:includeFontPadding="false"
+                android:text="Let's Go For Vote"
+                android:textColor="#ffffff"
+
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

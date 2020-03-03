@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#ACBB78"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_CheckDet"
+        android:background="@drawable/gradient_main_dashboard"
+        app:title="  Welcome To Regitration"/>
+
+    <ScrollView
+        android:id="@+id/scroll_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/aladin"
+                    android:text="Voters Registration"
+                    android:textColor="@color/colorPrimaryDark"
+
+                    android:textSize="45dp"
+                    app:fontFamily="@font/aladin" />
+
+                <EditText
+                    android:id="@+id/enter_name"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Full Name"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/enter_aadhar"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/aadhar"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Aadhaar Number"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:ems="12"/>
+
+                <EditText
+                    android:id="@+id/enter_contact"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/phone_black"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Mobile Number"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:ems="10"/>
+
+                <EditText
+                    android:id="@+id/enter_email"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/email_black"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your E-Mail Address"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/enter_DOB"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text"
+                    android:drawableLeft="@drawable/calender"
+                    android:drawablePadding="10dp"
+                    android:hint="Enter Your Date Of Birth"
+                    android:paddingLeft="10dp"
+                    android:textSize="20dp"
+                    android:inputType="number"/>
+
+                <RadioGroup
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/male"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:id="@+id/female"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Other"
+                        android:id="@+id/other"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"/>
+
+                </RadioGroup>
+
+
+                <Button
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/btnSubmit"
+                    android:textSize="25dp"
+                    android:background="@drawable/button_submit"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If Already Register ? "
+                    android:textColor="@color/colorRed"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" || Login"
+                    android:textSize="20dp"
+                    android:id="@+id/login"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
